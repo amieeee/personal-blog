@@ -31,6 +31,7 @@ ul, li {
   list-style: none;
 }
 a {
+  color: #333;
   text-decoration: none;
 }
 a:hover {
@@ -338,6 +339,214 @@ article {
   text-align: center;
 }
 /* 右侧的 headline 结束 */
+/* tab_box 开始*/
+.clearfloat {
+  clear: both;
+  overflow: hidden;
+  width: 100%;
+}
+.tab_box {
+  clear: both;
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.tab_buttons {
+  width: 100%;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border-bottom: 1px solid #e4e3e3;
+}
+.tab_buttons li {
+  display: block;
+  font-size: 16px;
+  width: 100px;
+  line-height: 40px;
+  text-align: center;
+  float: left;
+  cursor: pointer;
+  position: relative;
+}
+.newscurrent::after {
+  content: "";
+  background-color: #000;
+  width: 100px;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.newsitem {
+  display: none;
+}
+.newsitem:nth-child(1) {
+  display: block;
+}
+.newspic {
+  float: left;
+  width: 32%;
+  height: 218px;
+  overflow: hidden;
+  position: relative;
+}
+.newspic ul {
+  overflow: hidden;
+}
+.newspic li {
+  height: 100px;
+  background-color: rgba(0, 0, 0, 1);
+  overflow: hidden;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  position: relative;
+}
+.newspic li a {
+  display: block;
+  overflow: hidden;
+}
+.newspic img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  transition: all 0.5s ease;
+}
+.newspic span {
+  position: absolute;
+  bottom: 30%;
+  left: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  padding: 0 40px;
+  text-overflow: ellipsis;
+  line-height: 22px;
+  overflow: hidden;
+}
+.newspic li:hover img {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+.newslist {
+  float: right;
+  width: 66%;
+  /* overflow: hidden; */
+}
+.newslist li {
+  overflow: hidden;
+  height: 22px;
+  line-height: 32px;
+  padding: 0 20px 10px 20px;
+}
+.newslist li a {
+  height: 32px;
+}
+.newslist p {
+  /* width: 100%; */
+  line-height: 24px;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 48px;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+}
+.newslist li:hover {
+  height: 100%;
+  background-color: #f7f7f7;
+}
+.newslist li:hover a {
+    color: #000;
+    font-weight: bold;
+}
+.newslist li:hover i {
+  background-color: #222;
+}
+.newslist li:nth-child(1) {
+  height: 100%;
+  background: #f7f7f7;
+}
+.newslist li:nth-child(1)  a {
+  color: #000;
+  font-weight: bold;
+}
+.newslist:hover li:nth-child(1) i {
+    background: #9a9a9a;
+}
+.newslist:hover li:nth-child(1) {
+    height: 22px;
+    background: none;
+}
+.newslist:hover li:nth-child(1):hover {
+    height: 100%;
+    background: #f7f7f7;
+}
+.newslist:hover li:nth-child(1):hover a {
+    color: #000;
+    font-weight: bold;
+}
+.newslist:hover li:nth-child(1):hover i {
+    background: #222;
+}
+.newslist li i {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: #9a9a9a;
+  float: left;
+  margin-top: 6px;
+  margin-right: 20px;
+  position: relative;
+  font-style: normal;
+}
+.newslist li i::before {
+  position: absolute;
+  color: #fff;
+  left: 0;
+  top: 0;
+  font-size: 10px;
+  line-height: 20px;
+  width: 20px;
+  text-align: center;
+}
+.newslist li:first-child i {
+  background:#222;
+}
+.newslist li:first-child i::before {
+  content:"1";
+}
+.newslist li:nth-child(2) i::before {
+  content:"2";
+}
+.newslist li:nth-child(3) i::before {
+  content:"3";
+}
+.newslist li:nth-child(4) i::before {
+  content:"4";
+}
+.newslist li:nth-child(5) i::before {
+  content:"5";
+}
+/* tab_box 结束*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*rbox*/
 .rbox {
     width:23.5%;
@@ -345,7 +554,7 @@ article {
     overflow:hidden;
 }
 .card {
-    box-shadow:0px 1px 0px rgba(255,255,255,.1),inset 0px 1px 1px rgba(0,0,0,.7);
+    /* box-shadow:0px 1px 0px rgba(255,255,255,.1),inset 0px 1px 1px rgba(0,0,0,.7); */
     border-radius:3px;
     background:url(../images/quote-bg.png) no-repeat top right rgba(42,42,42,1);
     height:260px;
@@ -363,20 +572,20 @@ article {
     font-size:12px;
     padding:0 0 0 20px;
     line-height:28px;
-    text-shadow:0px 1px 2px rgba(0,0,0,.5);
+    /* text-shadow:0px 1px 2px rgba(0,0,0,.5); */
     color:#d0d2d4;
-    -webkit-animation:animations2 5s ease-in-out 5s;
+    /* -webkit-animation:animations2 5s ease-in-out 5s;
     -moz-animation:animations2 5s ease-in-out 5s;
     -o-animation:animations2 5s ease-in-out 5s;
     -ms-animation:animations2 5s ease-in-out 5s;
-    animation:animations2 5s ease-in-out 5s;
+    animation:animations2 5s ease-in-out 5s; */
 }
 .linkmore {
-    margin:15px
+    margin: 15px;
 }
 .linkmore li {
-    width:25%;
-    float:left
+    width: 25%;
+    float: left;
 }
 .linkmore li a {
     height:53px;
@@ -414,6 +623,22 @@ a.iconfont.icon-weixin {
     text-align: center;
     line-height: 53px;
 }
+#tim {
+  position: relative;
+}
+#tim i {
+  display: block;
+  position: absolute;
+  bottom: 55px;
+  right: -45px;
+}
+#tim i img {
+  height: 100px;
+  display: none;
+}
+#tim:hover i img {
+  display: block;
+}
 #weixin {
     position:relative
 }
@@ -421,7 +646,7 @@ a.iconfont.icon-weixin {
     display:block;
     position:absolute;
     bottom:55px;
-    right:0
+    right: 10px;
 }
 #weixin i img {
     height:100px;

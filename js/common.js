@@ -1,6 +1,5 @@
 window.onload = function () {
-  // 搜索图标的点击事件
-  // 是否被点击的标志
+  // 搜索图标的点击事件 是否被点击的标志
   function searchClick () {
     let flag = true
     document.getElementById("searchico").onclick = function () {
@@ -17,6 +16,7 @@ window.onload = function () {
     }
   }
   searchClick ()
+  // 轮播图
   function lunbotu () {
     let box = document.querySelector("#banbox")
     let screen = document.querySelector(".screen")
@@ -113,7 +113,24 @@ window.onload = function () {
     }
   }
   lunbotu()
-
+  // 点击切换界面内容等
+  function tabClick () {
+    let liObj = document.querySelector(".tab_buttons").children[0].children
+    let newstabObj = document.querySelector(".newstab").children
+    for (let i = 0; i < liObj.length; i++) {
+      liObj[i].onclick = function () {
+        for (let j = 0; j < liObj.length; j++) {
+          liObj[j].className = ""
+        }
+        liObj[i].setAttribute("class", "newscurrent")
+        for (let j = 0; j < newstabObj.length; j++) {
+          newstabObj[j].style.display = "none"
+        }
+        newstabObj[i].style.display = "block"
+      }
+    }
+  }
+  tabClick()
   // 原来的想法现在被删除了
   /* // 搜索框的关闭的点击事件
 

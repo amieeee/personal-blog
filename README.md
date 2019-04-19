@@ -32,3 +32,22 @@
     5. 为 box 添加 鼠标进入和离开事件 为 左右图标添加点击事件
     6. 点击处理函数 动画移动处理函数
   + headline 出现了问题 设置浮动没有上去 因为与它的兄弟元素没有设置浮动 所以它才没有浮动上去
+  + 多余文本显示省略号
+  `
+    text-overflow: ellipsis; // 显示省略号
+    -webkit-box-orient: vertical; // 方向
+    display: -webkit-box; // display 的样式
+    -webkit-line-clamp: 2; // 显示两行之后 在显示省略号
+  `
+  + 在 .newslist 中的其他位置 高度设置为 22px 看权重的问题 用权重来解决 高度问题
+  `
+  .newslist:hover li:nth-child(1) {
+      height: 22px;
+      background: none;
+  }
+  `
+  + 获取元素对象 设置类名 带引号表示里面的常量 不带引号是变量
+  `
+    liObj.className = "类名"
+    liObj[i].setAttribute("class", "类名")
+  `
