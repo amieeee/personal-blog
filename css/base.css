@@ -665,6 +665,22 @@ article {
 .tupian img{
   width: 100%;
 }
+/* blogtitle 开始 */
+.bloglist {
+  margin-bottom: 10px;
+  overflow: hidden;
+  font-size: 18px;
+}
+.bloglist b {
+  color: #f00;
+}
+.bloglist ul {
+  padding-top: 10px;
+}
+.bloglist li:hover .blogtitle a{
+  color: #337ab7;
+}
+/* blogtitle 结束 */
 
 
 
