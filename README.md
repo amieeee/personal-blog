@@ -51,3 +51,11 @@
     liObj.className = "类名"
     liObj[i].setAttribute("class", "类名")
   `
+  + 样式重复的 考虑把它们写成公共样式 便于复用
+  + 单行显示元素内容， 多余用省略号代替
+  `
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  `
+  + 注意父级元素是否是块或者行内块等

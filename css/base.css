@@ -345,14 +345,17 @@ article {
   overflow: hidden;
   width: 100%;
 }
+/* 公共样式背景颜色 */
+.whitebg {
+    background:#fff;
+    border-radius:3px;
+    padding:20px;
+    margin-bottom:20px;
+    overflow:hidden;
+}
 .tab_box {
   clear: both;
   position: relative;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 3px;
-  margin-bottom: 20px;
-  overflow: hidden;
 }
 .tab_buttons {
   width: 100%;
@@ -480,6 +483,9 @@ article {
     height: 22px;
     background: none;
 }
+.newslist:hover li:nth-child(1) a{
+    font-weight: normal;
+}
 .newslist:hover li:nth-child(1):hover {
     height: 100%;
     background: #f7f7f7;
@@ -531,6 +537,134 @@ article {
   content:"5";
 }
 /* tab_box 结束*/
+/* zhuanti 开始 */
+.htitle {
+  font-size: 16px;
+  border-bottom: 1px solid #eee;
+  line-height: 40px;
+  font-weight: normal;
+  color: #484848;
+  margin-bottom: 10px;
+  position: relative;
+}
+.htitle::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background: #000;
+  transition: all 0.5s ease;
+}
+.htitle:hover::after {
+  width: 100px;
+}
+.hnav {
+  float: right;
+}
+.hnav a {
+  display: block;
+  float: left;
+  margin-right: 10px;
+  padding-right: 10px;
+  position: relative;
+}
+.hnav a::after {
+  content: "/";
+  position: relative;
+  right: -10px;
+  bottom: 0;
+  color: #ccc;
+}
+.hnav a:last-child::after {
+  content: ""
+}
+.zhuanti ul {
+  overflow: hidden;
+  padding: 10px 0 20px 10px;
+  position: relative;
+}
+.zhuanti ul::before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 1px;
+  height: 100%;
+  left: 10px;
+}
+.zhuanti ul::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: 20px;
+}
+.zhuanti li {
+  float: left;
+  width: 27.6%;
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+  padding: 20px;
+  transition: all 0.5s ease;
+}
+.ztpic {
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  display: block;
+  background: #ccc;
+  border-radius: 3px;
+}
+.ztpic img {
+  width: 100%;
+  min-height: 100%;
+  display: inline-block;
+  height: auto;
+  vertical-align:middle;
+  transition: all 0.5s ease;
+}
+.zhuanti li b {
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 30px;
+  line-height: 30px;
+  margin: 10px 0;
+}
+.zhuanti li span {
+  font-size: 14px;
+  height: 62px;
+  color: #999;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-int-clamp: 3;
+  display: -webkit-box;
+}
+.readmore {
+  color: #096;
+  display: block;
+  margin-top: 10px;
+}
+.readmore::before {
+  content: "+";
+  color: #063;
+}
+.zhuanti li:hover {
+  box-shadow: #ccc 1px 1px 8px;
+  background-color: #fff;
+}
+.zhuanti li:hover img {
+  transform: scale(1.05)
+}
+/* zhuanti 结束 */
+.tupian img{
+  width: 100%;
+}
 
 
 
@@ -546,13 +680,13 @@ article {
 
 
 
-
-/*rbox*/
+/*rbox 开始*/
 .rbox {
     width:23.5%;
     float:right;
     overflow:hidden;
 }
+/* card 我的名片 开始 */
 .card {
     /* box-shadow:0px 1px 0px rgba(255,255,255,.1),inset 0px 1px 1px rgba(0,0,0,.7); */
     border-radius:3px;
@@ -606,19 +740,19 @@ a.iconfont.icon-zhuye {
     line-height: 53px;
 }
 a.iconfont.icon-youxiang {
-    color:#FF991A;
+    color: #FF991A;
     font-size: 32px;
     text-align: center;
     line-height: 53px;
 }
 a.iconfont.icon--- {
-    color:#1296DB;
+    color: #1296DB;
     font-size: 32px;
     text-align: center;
-    line-height: 53px;
+    line-height: 57px;
 }
 a.iconfont.icon-weixin {
-    color:#07AF12;
+    color: #07AF12;
     font-size: 32px;
     text-align: center;
     line-height: 53px;
@@ -643,20 +777,20 @@ a.iconfont.icon-weixin {
     position:relative
 }
 #weixin i {
-    display:block;
-    position:absolute;
-    bottom:55px;
+    display: block;
+    position: absolute;
+    bottom: 55px;
     right: 10px;
 }
 #weixin i img {
-    height:100px;
-    display:none
+    height: 100px;
+    display: none
 }
 #weixin:hover i img {
-    display:block
+    display: block
 }
-/*htitle*/
-
+/* card 我的名片 结束 */
+/* rbox结束 */
 /* article 结束 */
 
 
