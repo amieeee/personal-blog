@@ -682,6 +682,7 @@ article {
   margin-bottom: 20px;
   border-bottom: 1px dashed #eee;
   padding-bottom: 20px;
+  position:relative;
 }
 .bloglist li:hover .blogtitle a{
   color: #337ab7;
@@ -704,6 +705,39 @@ article {
 }
 .bplist a img:hover {
   transform: scale(1.05);
+}
+.blogpic {
+  float: left;
+  width: 23.2%;
+  margin-right: 20px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+  display: block;
+}
+.blogpic i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  display: block;
+  font-style: normal;
+  padding: 3px 5px;
+  background: rgba(18,182,221,0.8);
+  font-size: 14px;
+}
+.blogpic i a {
+  color:#FFF
+}
+a.viewmore {
+	display: block;
+	right: 10px;
+	bottom: 20px;
+	position: absolute;
+	padding: 3px 10px;
+	background: #12b7de;
+	color: #fff;
+	border-radius: 3px;
 }
 .blogtext {
   font-size: 14px;
