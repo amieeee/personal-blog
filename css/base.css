@@ -538,6 +538,7 @@ article {
 }
 /* tab_box 结束*/
 /* zhuanti 开始 */
+/* 可复用的类样式 */
 .htitle {
   font-size: 16px;
   border-bottom: 1px solid #eee;
@@ -800,26 +801,11 @@ a.viewmore {
   bottom: 0;
 }
 /* blogtitle 结束 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*rbox 开始*/
 .rbox {
-    width:23.5%;
-    float:right;
-    overflow:hidden;
+    width: 23.5%;
+    float: right;
+    overflow: hidden;
 }
 /* card 我的名片 开始 */
 .card {
@@ -925,6 +911,41 @@ a.iconfont.icon-weixin {
     display: block
 }
 /* card 我的名片 结束 */
+/* notice 网站公告开始 */
+.notice ul{
+  padding-top: 18px;
+}
+.notice li {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: relative;
+  font-size: 12px;
+  line-height: 30px;
+  border-radius: 3px;
+  margin-bottom: 12px;
+  background:#f6f6f6;
+  padding: 4px 12px 4px 30px;
+  transition: all 0.2 ease;
+}
+.notice li::before {
+  content: "";
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  border: 1px solid #000;
+  border-radius: 50%;
+  background: #000;
+}
+.notice li:hover {
+  box-shadow: 1px 1px 8px #ccc;
+  transition: all 0.3s ease;
+  background: #f2f2f2;
+}
+/* notice 网站公告结束 */
 /* rbox结束 */
 /* article 结束 */
 
