@@ -1018,6 +1018,7 @@ a.iconfont.icon-weixin {
   font-size: 9px;
   color: #fff;
   width: 16px;
+  height: 16px;
   line-height: 16px;
   text-align: center;
 }
@@ -1049,6 +1050,83 @@ a.iconfont.icon-weixin {
   content: "8";
 }
 /* paihang 排行结束 */
+/* tuijian 推荐开始 */
+.tuijian ul {
+  overflow: hidden;
+  padding-top: 10px;
+}
+.tuijian ul li {
+  overflow: hidden;
+  margin-bottom: 10px;
+  height: 60px;
+}
+.tuijian ul li i {
+  width: 70px;
+  height: 70px;
+  display: block;
+  overflow: hidden;
+  float: left;
+  margin-right: 10px;
+}
+.tuijian li i img {
+  width: 100%;
+  transition: all 0.5s ease;
+}
+.tuijian li:hover i img {
+  transform: scale(1.1);
+}
+.tuijian li p {
+  margin-top: 10px;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.tuijian li:hover {
+	background: #f6f6f6;
+}
+/* tuijian 推荐结束 */
+/* 广告开始  */
+.ad ul {
+  overflow: hidden;
+  border-right: 3px;
+}
+/* 广告结束  */
+/* wenzi 文字开始 */
+.wenzi li {
+  line-height: 22px;
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 15px;
+}
+.wenzi li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 3px;
+  height: 3px;
+  background: #000;
+}
+/* wenzi 文字结束 */
+/* tongji 统计开始 */
+.tongji li {
+  margin-bottom: 10px;
+}
+.tongji li a {
+	color: #096
+}
+.tongji li a:hover {
+	text-decoration: underline;
+	color: #000;
+}
+.tongji img {
+	/* width: 100%; */
+	margin-left: 40px;
+	overflow: hidden;
+}
+/* tongji 统计结束 */
 
 /* rbox结束 */
 /* article 结束 */
