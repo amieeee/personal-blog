@@ -131,6 +131,10 @@ window.onload = function () {
     }
   }
   tabClick()
+  // 点击回到头部
+  const clickBackHead = () => {
+    
+  }
   // 原来的想法现在被删除了
   /* // 搜索框的关闭的点击事件
 
