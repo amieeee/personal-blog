@@ -1179,3 +1179,21 @@ footer a:hover {
   display: block;
 }
 /* footer 结束 */
+/* index.html 结束 */
+/* list.html 开始 */
+.lanmu img {
+  float: left;
+  height: 100px;
+  margin-right: 20px;
+}
+.lanmu h1 {
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+.lanmu p {
+  color: #666;
+}
+/* list.html 结束 */
+/* list2.html 开始 */
+
+/* list2.html 结束 */
