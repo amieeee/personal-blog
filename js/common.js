@@ -131,10 +131,15 @@ window.onload = function () {
     }
   }
   tabClick()
-  // 点击回到头部
+  // 点击箭头回到头部
   const clickBackHead = () => {
-    
+    let top = document.querySelector(".top")
+    top.onclick = function () {
+      document.body.scrollTop = 0
+      document.documentElement.scrollTop = 0
+    }
   }
+  clickBackHead()
   // 原来的想法现在被删除了
   /* // 搜索框的关闭的点击事件
 
