@@ -1230,5 +1230,77 @@ footer a:hover {
 }
 /* daohang.html 结束 */
 /* about.html 开始 */
-
+.about {
+  overflow: hidden;
+  background: url(../images/abbg.png) no-repeat right top #fff;
+  padding: 20px 40px;
+}
+.ab_box {
+  overflow: hidden;
+  margin: 20px 0;
+}
+.ab_box h3 {
+  font-size: 18px;
+  margin: 10px 0 10px;
+}
+.ab_box p {
+  color: #666;
+  margin-bottom: 5px;
+}
+.avatar_pic {
+  position: relative;
+  float: left;
+  margin-right: 10px;
+  background: -webkit-linear-gradient(bottom left,rgba(0,153,255,.9),rgba(42,228,197,.7));
+  background: -o-linear-gradient(bottom left,rgba(0,153,255,.9),rgba(42,228,197,.7));
+  background: linear-gradient(to top right, rgba(0, 153, 255, 0.9), rgba(42, 228, 197, 0.7));
+  display: block;
+  padding: 2px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.avatar_pic img {
+  width: 100%;
+  border-radius: 50%;
+}
+.avatar_pic::before {
+  content: "";
+  position: absolute;
+  background: url(../images/v.png) no-repeat;
+  bottom: 0;
+  right: 10px;
+  height: 24px;
+  width: 24px;
+  background-size: 24px;
+}
+.gd_title {
+  background: url(../images/hline.png) no-repeat bottom right;
+  clear: both;
+  margin: 20px 0;
+  font-size: 18px;
+  border-bottom: 1px dashed #000;
+  width: 120px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  background-size: 40px;
+   display:inline-block;
+}
 /* about.html 结束 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 空白 */
